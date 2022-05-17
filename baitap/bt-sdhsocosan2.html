@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let daySo = window.prompt()
+let  stt = daySo.toString();
+  let  giaTri = [stt[0]];
+    for (index = 1;index <daySo.length;index++) {
+     if (stt[x-1]%2===0 && stt[x]%2===0){
+         giaTri.push("-", stt[x])
+     }
+     else
+         giaTri.push(stt[x])
+
+    }
+   document.write(giaTri.join(""));
+</script>
+</body>
+</html>

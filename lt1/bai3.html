@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [1,5,6,8,20,24,15,47,27,100]
+  let max = arr[0]
+  index=0
+  sum= 0
+  for (let i=0 ; i<arr.length;i++){
+      sum = sum+arr[i]
+      if (max<arr[i]){
+          max = arr[i]
+          index= i
+      }
+  }
+
+  let Tb = sum/arr.length
+  document.write("Giá trị trung bình là" + Tb)
+  document.write("So lon nhat la"+ max)
+</script>
+</body>
+</html>

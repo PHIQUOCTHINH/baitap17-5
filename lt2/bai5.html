@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr3 = window.prompt("Nhập vào mảng 1").toString();
+    let arr4 = window.prompt("Nhập vào mảng 2").toString();
+    let arr1 = Array.from(arr3)
+    let arr2 = Array.from(arr4)
+    let bang
+    if (arr1.length!==arr2.length){
+        bang= false;
+    }
+    else {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] !== arr2[i]) {
+                bang = false;
+                break;
+            }
+            bang = true;
+        }
+    }
+        if (bang){
+            document.write("2 mảng giống nhau")
+
+        } else {
+            document.write("2 mảng khác nhau")
+
+
+    }
+</script>
+</body>
+</html>
